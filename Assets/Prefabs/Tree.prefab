@@ -1,0 +1,185 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &165046
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 440380}
+  - 114: {fileID: 11490298}
+  - 114: {fileID: 11468524}
+  m_Layer: 0
+  m_Name: Tree
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &440380
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 165046}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11468524
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 165046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ae3b281ed1d65a4eb65659d8402e0e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotations:
+  - transform: {fileID: 440380}
+    axis: 3
+    uniform: 0
+    min: -360
+    max: 360
+  scales:
+  - transform: {fileID: 440380}
+    axis: 13
+    uniform: 1
+    min: .75
+    max: .75
+  translations:
+  - transform: {fileID: 440380}
+    axis: 9
+    uniform: 0
+    min: -.25
+    max: .25
+  defaultTransform: {fileID: 0}
+  defaultToBaseTransform: 0
+  destroyScriptAfter: 0
+--- !u!114 &11490298
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 165046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc26e49a58b914cbf9cc43e47bd34a54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  models:
+  - {fileID: 129214, guid: 84abc0b4a3d89cf42994a49c7f27d79e, type: 2}
+  - {fileID: 147522, guid: 13066d2cc27d1c144aa886195e71c0d1, type: 2}
+  - {fileID: 165086, guid: 57588682a49c9734ba42be72c75a972a, type: 2}
+  - {fileID: 171682, guid: a6766644c341bfa4990b0b8fd2bd5a9e, type: 2}
+  - {fileID: 149102, guid: b355ae641a13f7e46a7f8dc0af2ae4d9, type: 2}
+  - {fileID: 152768, guid: 837a05da51979184a8db2566af1cf8d0, type: 2}
+  - {fileID: 127092, guid: 1e815ee9bd4cc5b418612dbe295b212e, type: 2}
+  - {fileID: 193842, guid: 3e4b1bd61121a1346a22a9fbc2ea6cc9, type: 2}
+  - {fileID: 148196, guid: a34c069ca68bbe9408a2e3f55006d5cc, type: 2}
+  - {fileID: 172816, guid: e41baa27d2fa36c4dae25b2bff869b02, type: 2}
+  modelTextures:
+  - {fileID: 2800000, guid: 4e12a5eefdc1b574ca9931b5d336afe2, type: 3}
+  - {fileID: 2800000, guid: e4290a21720813648b87b2a8d4e4971b, type: 3}
+  - {fileID: 2800000, guid: 86c0b170b67dc1341aa8a555a4b6d8f0, type: 3}
+  - {fileID: 2800000, guid: 93dc2ed7eebfb5d4da9a35ed39ccfd4e, type: 3}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: scales.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: modelTextures.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: rotations.Array.data[0].transform
+      value: 
+      objectReference: {fileID: 440380}
+    - target: {fileID: 0}
+      propertyPath: scales.Array.data[0].transform
+      value: 
+      objectReference: {fileID: 440380}
+    - target: {fileID: 0}
+      propertyPath: translations.Array.data[0].transform
+      value: 
+      objectReference: {fileID: 440380}
+    - target: {fileID: 0}
+      propertyPath: scales.Array.data[1].axis
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: scales.Array.data[1].uniform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: scales.Array.data[1].min
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: scales.Array.data[1].max
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: scales.Array.data[0].min
+      value: .75
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: scales.Array.data[0].max
+      value: .75
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: scales.Array.data[0].axis
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: scales.Array.data[0].uniform
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: scales.Array.data[1].transform
+      value: 
+      objectReference: {fileID: 440380}
+    - target: {fileID: 0}
+      propertyPath: modelTextures.Array.data[0]
+      value: 
+      objectReference: {fileID: 2800000, guid: 4e12a5eefdc1b574ca9931b5d336afe2, type: 3}
+    - target: {fileID: 0}
+      propertyPath: modelTextures.Array.data[1]
+      value: 
+      objectReference: {fileID: 2800000, guid: e4290a21720813648b87b2a8d4e4971b, type: 3}
+    - target: {fileID: 0}
+      propertyPath: modelTextures.Array.data[2]
+      value: 
+      objectReference: {fileID: 2800000, guid: 86c0b170b67dc1341aa8a555a4b6d8f0, type: 3}
+    - target: {fileID: 0}
+      propertyPath: modelTextures.Array.data[3]
+      value: 
+      objectReference: {fileID: 2800000, guid: 93dc2ed7eebfb5d4da9a35ed39ccfd4e, type: 3}
+    - target: {fileID: 0}
+      propertyPath: modelTextures.Array.data[4]
+      value: 
+      objectReference: {fileID: 2800000, guid: 6a9cac9c175358b43b600a8f60ef0087, type: 3}
+    - target: {fileID: 0}
+      propertyPath: translations.Array.data[0].min
+      value: -.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: translations.Array.data[0].max
+      value: .25
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 165046}
+  m_IsPrefabParent: 1
